@@ -25,13 +25,15 @@ project:
       ref: main
   bibliography:
     - pages/references.bib
-  toc:
+toc:
     - file: index.md
       title: Home
     - title: Portfolio & Work
       children:
         - file: pages/research.md
         - file: pages/experience.md
+    - file: blog.md
+      title: Blog
 site:
   options:
     logo: logo.png
