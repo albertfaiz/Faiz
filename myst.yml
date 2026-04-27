@@ -1,8 +1,8 @@
 version: 1
 project:
-  title: Website Title
-  # authors:
-  #   - name: Author Name
+  title: Faiz Ahmad | Physics & FusionAI ML
+  authors:
+    - name: Faiz Ahmad
   copyright: '2026'
   exclude:
     - _build
@@ -16,10 +16,10 @@ project:
     - CONDUCT.md
     - CONTRIBUTING.md
     - README.md
-  github: opengeos/myst-website-template
+  github: albertfaiz/Faiz
   thebe:
     binder:
-      repo: opengeos/myst-website-template
+      repo: albertfaiz/Faiz
       provider: github
       url: https://mybinder.org
       ref: main
@@ -27,23 +27,11 @@ project:
     - pages/references.bib
   toc:
     - file: index.md
-    - title: Preface
+      title: Home
+    - title: Portfolio & Work
       children:
-        - file: pages/preface.md
-    - title: Getting Started
-      children:
-        - file: pages/part01/getting-started.md
-        - file: pages/part01/installation.md
-    - title: Examples
-      children:
-        - file: pages/part02/first-example.md
-    - file: blog.md
-      children:
-        - file: tags/myst-markdown.md
-        - file: tags/tutorial.md
-        - file: tags/github-pages.md
-    - pattern: posts/*.md
-      hidden: true
+        - file: pages/research.md
+        - file: pages/experience.md
 site:
   options:
     logo: logo.png
@@ -51,10 +39,9 @@ site:
     favicon: fav.ico
     folders: true
     style: custom.css
-    # analytics_google: G-XXX
   actions:
-    - title: RSS
-      url: https://opengeos.org/myst-website-template/rss.xml
+    - title: LinkedIn
+      url: https://linkedin.com/in/your-profile-here # Update with your actual URL
+    - title: GitHub
+      url: https://github.com/albertfaiz
   template: book-theme
-  parts:
-    primary_sidebar_footer: ''
